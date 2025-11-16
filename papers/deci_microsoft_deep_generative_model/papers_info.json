@@ -1,0 +1,55 @@
+{
+  "2107.02926v2": {
+    "title": "Solution of Physics-based Bayesian Inverse Problems with Deep Generative Priors",
+    "authors": [
+      "Dhruv V Patel",
+      "Deep Ray",
+      "Assad A Oberai"
+    ],
+    "summary": "Inverse problems are ubiquitous in nature, arising in almost all areas of science and engineering ranging from geophysics and climate science to astrophysics and biomechanics. One of the central challenges in solving inverse problems is tackling their ill-posed nature. Bayesian inference provides a principled approach for overcoming this by formulating the inverse problem into a statistical framework. However, it is challenging to apply when inferring fields that have discrete representations of large dimensions (the so-called \"curse of dimensionality\") and/or when prior information is available only in the form of previously acquired solutions. In this work, we present a novel method for efficient and accurate Bayesian inversion using deep generative models. Specifically, we demonstrate how using the approximate distribution learned by a Generative Adversarial Network (GAN) as a prior in a Bayesian update and reformulating the resulting inference problem in the low-dimensional latent space of the GAN, enables the efficient solution of large-scale Bayesian inverse problems. Our statistical framework preserves the underlying physics and is demonstrated to yield accurate results with reliable uncertainty estimates, even in the absence of information about underlying noise model, which is a significant challenge with many existing methods. We demonstrate the effectiveness of proposed method on a variety of inverse problems which include both synthetic as well as experimentally observed data.",
+    "pdf_url": null,
+    "published": "2021-07-06"
+  },
+  "2301.00942v1": {
+    "title": "Deep Learning and Computational Physics (Lecture Notes)",
+    "authors": [
+      "Deep Ray",
+      "Orazio Pinti",
+      "Assad A. Oberai"
+    ],
+    "summary": "These notes were compiled as lecture notes for a course developed and taught at the University of the Southern California. They should be accessible to a typical engineering graduate student with a strong background in Applied Mathematics.\n  The main objective of these notes is to introduce a student who is familiar with concepts in linear algebra and partial differential equations to select topics in deep learning. These lecture notes exploit the strong connections between deep learning algorithms and the more conventional techniques of computational physics to achieve two goals. First, they use concepts from computational physics to develop an understanding of deep learning algorithms. Not surprisingly, many concepts in deep learning can be connected to similar concepts in computational physics, and one can utilize this connection to better understand these algorithms. Second, several novel deep learning algorithms can be used to solve challenging problems in computational physics. Thus, they offer someone who is interested in modeling a physical phenomena with a complementary set of tools.",
+    "pdf_url": null,
+    "published": "2023-01-03"
+  },
+  "2306.11113v2": {
+    "title": "Learn to Accumulate Evidence from All Training Samples: Theory and Practice",
+    "authors": [
+      "Deep Pandey",
+      "Qi Yu"
+    ],
+    "summary": "Evidential deep learning, built upon belief theory and subjective logic, offers a principled and computationally efficient way to turn a deterministic neural network uncertainty-aware. The resultant evidential models can quantify fine-grained uncertainty using the learned evidence. To ensure theoretically sound evidential models, the evidence needs to be non-negative, which requires special activation functions for model training and inference. This constraint often leads to inferior predictive performance compared to standard softmax models, making it challenging to extend them to many large-scale datasets. To unveil the real cause of this undesired behavior, we theoretically investigate evidential models and identify a fundamental limitation that explains the inferior performance: existing evidential activation functions create zero evidence regions, which prevent the model to learn from training samples falling into such regions. A deeper analysis of evidential activation functions based on our theoretical underpinning inspires the design of a novel regularizer that effectively alleviates this fundamental limitation. Extensive experiments over many challenging real-world datasets and settings confirm our theoretical findings and demonstrate the effectiveness of our proposed approach.",
+    "pdf_url": null,
+    "published": "2023-06-19"
+  },
+  "1912.06732v2": {
+    "title": "On the approximation of rough functions with deep neural networks",
+    "authors": [
+      "Tim De Ryck",
+      "Siddhartha Mishra",
+      "Deep Ray"
+    ],
+    "summary": "Deep neural networks and the ENO procedure are both efficient frameworks for approximating rough functions. We prove that at any order, the ENO interpolation procedure can be cast as a deep ReLU neural network. This surprising fact enables the transfer of several desirable properties of the ENO procedure to deep neural networks, including its high-order accuracy at approximating Lipschitz functions. Numerical tests for the resulting neural networks show excellent performance for approximating solutions of nonlinear conservation laws and at data compression.",
+    "pdf_url": null,
+    "published": "2019-12-13"
+  },
+  "2012.06469v1": {
+    "title": "DILIE: Deep Internal Learning for Image Enhancement",
+    "authors": [
+      "Indra Deep Mastan",
+      "Shanmuganathan Raman"
+    ],
+    "summary": "We consider the generic deep image enhancement problem where an input image is transformed into a perceptually better-looking image. Recent methods for image enhancement consider the problem by performing style transfer and image restoration. The methods mostly fall into two categories: training data-based and training data-independent (deep internal learning methods). We perform image enhancement in the deep internal learning framework. Our Deep Internal Learning for Image Enhancement framework enhances content features and style features and uses contextual content loss for preserving image context in the enhanced image. We show results on both hazy and noisy image enhancement. To validate the results, we use structure similarity and perceptual error, which is efficient in measuring the unrealistic deformation present in the images. We show that the proposed framework outperforms the relevant state-of-the-art works for image enhancement.",
+    "pdf_url": null,
+    "published": "2020-12-11"
+  }
+}

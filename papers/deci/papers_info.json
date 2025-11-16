@@ -1,0 +1,56 @@
+{
+  "astro-ph/0307390v2": {
+    "title": "Deci hertz Laser Interferometer can determine the position of the Coalescing Binary Neutron Stars within an arc minute a week before the final merging event to Black Hole",
+    "authors": [
+      "Ryuichi Takahashi",
+      "Takashi Nakamura"
+    ],
+    "summary": "It may be possible to construct a laser interferometer gravitational wave antenna in space with $h_{rms}\\sim 10^{-23}$ at $ f\\sim 0.1{\\rm Hz}$ in $\\sim 2020$. This deci hertz antenna may be called DECIGO/BBO,which stand for DECi hertz Interferometer Gravitational wave Observatory and Big Bang Observer, respectively. The analysis of 1-10 years observational data of the coalescing binary neutron stars or black holes at the distance of $\\sim$ 300Mpc will give us the spatial position within $\\sim$ an arc minute and the time of the coalescence within $\\sim 0.1$ sec beforehand. With the knowledge of the accurate position and the time of final merging event, the follow up simultaneous observation using high frequency ($ f\\sim 100{\\rm Hz}$) gravitational wave antennae as well as electro-magnetic wave antennae from the radio frequency to the ultra high energy gamma ray will reveal the physics in the enigmatic event of the coalescence and the formation of the black hole.",
+    "pdf_url": null,
+    "published": "2003-07-22"
+  },
+  "2105.06069v1": {
+    "title": "Detection Landscape in the Deci-Hertz Gravitational-Wave Spectrum",
+    "authors": [
+      "Kiwamu Izumi",
+      "Karan Jani"
+    ],
+    "summary": "Direct observations of gravitational waves at frequencies around deci-Hertz will play a crucial role in fully exploiting the potential of multi-messenger astronomy. In this chapter, we discuss the detection landscape for the next several decades of the deci-Hertz gravitational-wave spectrum. We provide an overview of the experimental frontiers being considered to probe this challenging regime and the astrophysics and fundamental goals accessible towards them. This includes interferometric observatories in space with heliocentric and geocentric satellites, cubesats, lunar-based experiments and atom intereferometry. A major focus of this chapter is towards the technology behind DECi-hertz Interferometer Gravitational wave Observatory (DECIGO) and its scientific pathfinder mission concept B-DECIGO.",
+    "pdf_url": null,
+    "published": "2021-05-13"
+  },
+  "1104.1161v2": {
+    "title": "$\\mathscr{O}(100 GeV)$ Deci-weak $W^\\prime/Z^\\prime$ at Tevatron and LHC",
+    "authors": [
+      "Xiao-Ping Wang",
+      "You-Kai Wang",
+      "Bo Xiao",
+      "Jia Xu",
+      "Shou-hua Zhu"
+    ],
+    "summary": "Recently Tevatron released their measurements on invariant mass spectrum of electron/positron, as well as the di-jet arising from WW+WZ production with one W leptonically decay. Though the statistics is not significant, there are two bumps around 240 GeV and 120-160 GeV respectively. We proposed that the two bumps correspond to the extra light gauge bosons $Z^\\prime$ and $W^\\prime$, which couple with quarks with the deci-weak strength. In this brief report, we also simulated di-jet invariant mass distribution at the current running LHC.",
+    "pdf_url": null,
+    "published": "2011-04-06"
+  },
+  "2505.00084v2": {
+    "title": "Discovering the Dispersion of Gravitational Waves using Multi-Band Observation including Deci-Hertz: A Unique Probe to Cosmic Acceleration",
+    "authors": [
+      "Adith Praveen",
+      "Panchajanya Dey",
+      "Suvodip Mukherjee"
+    ],
+    "summary": "The dispersion in the speed of gravitational waves is a novel way to test the general theory of relativity and understand whether the origin of cosmic acceleration is due to any alternative theory of gravity. Several alternative theories of gravity predict dispersion in the gravitational wave signal in a frequency-dependent deviation from the speed of light at lower frequencies than accessible from current ground-based detectors. We show how a multi-band observation of gravitational wave signal combining deci-Hertz gravitational wave signal from LGWA (Lunar Gravitational Wave Antenna) with ground-based detectors such as Cosmic Explorer or Einstein Telescope, and also including LISA (Laser Interferometer Space Antenna), we can probe the energy scale associated with effective theory of modified gravity scenarios by combining only $\\mathcal{O}(10)$ high signal to noise ratio (SNR) with a precision of approximately $8.6\\%$. This precision will further improve with the inclusion of more events as $\\sqrt{N}$. In the future, this measurement will shed light on an unexplored domain of fundamental physics and will bring deeper insights into the phenomenon of cosmic acceleration. The operation of the gravitational wave detector in the deci-Hertz frequency band is key to exploring this frontier of fundamental physics.",
+    "pdf_url": null,
+    "published": "2025-04-30"
+  },
+  "1702.08479v2": {
+    "title": "Revealing the formation of stellar-mass black hole binaries: The need for deci-Hertz gravitational wave observatories",
+    "authors": [
+      "Xian Chen",
+      "Pau Amaro-Seoane"
+    ],
+    "summary": "The formation of compact stellar-mass binaries is a difficult, but interesting problem in astrophysics. There are two main formation channels: In the field via binary star evolution, or in dense stellar systems via dynamical interactions. The Laser Interferometer Gravitational-Wave Observatory (LIGO) has detected black hole binaries (BHBs) via their gravitational radiation. These detections provide us with information about the physical parameters of the system. It has been claimed that when the Laser Interferometer Space Antenna (LISA) is operating, the joint observation of these binaries with LIGO will allow us to derive the channels that lead to their formation. However, we show that for BHBs in dense stellar systems dynamical interactions could lead to high eccentricities such that a fraction of the relativistic mergers are not audible to LISA. A non-detection by LISA puts a lower limit of about $0.005$ on the eccentricity of a BHB entering the LIGO band. On the other hand, a deci-Hertz observatory, like DECIGO or Tian Qin, would significantly enhance the chances of a joint detection, and shed light on the formation channels of these binaries.",
+    "pdf_url": null,
+    "published": "2017-02-27"
+  }
+}

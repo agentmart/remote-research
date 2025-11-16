@@ -1,0 +1,39 @@
+# MedGemma: Medical Language Model
+
+MedGemma is a medical large language model (LLM) developed by Google. It's derived from the Gemma family of open models but specifically trained and fine-tuned on medical data to enable healthcare applications.
+
+## Model Variants
+- MedGemma is available in multiple sizes (including 7B parameter version)
+- Comes in both base and instruction-tuned variants
+
+## Where to Use MedGemma
+
+1. **Hugging Face**: 
+   - The model is available through the Hugging Face platform
+   - Access at huggingface.co/google/medgemma-7b and similar repositories
+   - Requires authentication with a Hugging Face account
+
+2. **Google Cloud Platform**:
+   - Can be deployed through Vertex AI
+   - Useful for enterprise medical applications with proper compliance controls
+
+3. **Local Deployment**:
+   - Compatible with standard LLM frameworks like Transformers
+   - Can be run on consumer hardware (high-end GPUs recommended)
+   - Smaller variants work with limited resources
+
+4. **Research Environments**:
+   - Ideal for academic and clinical research
+   - Can be used in educational settings with proper agreements
+
+## Usage Limitations
+- Requires acceptance of model license terms
+- Not intended for direct clinical decision-making without human oversight
+- Should be used in compliance with healthcare data regulations (HIPAA, etc.)
+
+## Ethical Considerations
+- Trained on medical literature and data with appropriate permissions
+- Users should be aware of potential biases and limitations
+- Not a replacement for medical professionals
+
+Note: Always check the latest documentation and license requirements when implementing MedGemma in any environment.
