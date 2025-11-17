@@ -17,7 +17,7 @@ logger = logging.getLogger("research_server")
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server
-mcp = FastMCP("research", host="0.0.0.0", port=10000)
+mcp = FastMCP("research", port=8001)
 logger.info("FastMCP research server initialized")
 
 @mcp.tool()
@@ -216,7 +216,9 @@ if __name__ == "__main__":
     try:
         # Initialize and run the server
         logger.info("Server is now running and waiting for MCP protocol messages...")
-        mcp.run(transport='stdio')
+        # mcp.run(transport='stdio')
+        # mcp.run(transport='sse')
+        mcp.run(transport="streamable-http")
     except KeyboardInterrupt:
         logger.info("Server shutdown requested by user (Ctrl+C)")
     except Exception as e:
