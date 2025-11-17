@@ -1,13 +1,24 @@
 import arxiv
 import json
 import os
+import logging
+import sys
 from typing import List
 from mcp.server.fastmcp import FastMCP
+
+# Configure logging to stderr so it doesn't interfere with MCP stdio communication
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    stream=sys.stderr
+)
+logger = logging.getLogger("research_server")
 
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server
 mcp = FastMCP("research")
+logger.info("FastMCP research server initialized")
 
 @mcp.tool()
 def search_papers(topic: str, max_results: int = 5) -> List[str]:
@@ -21,6 +32,8 @@ def search_papers(topic: str, max_results: int = 5) -> List[str]:
     Returns:
         List of paper IDs found in the search
     """
+    
+    logger.info(f"Starting paper search for topic: '{topic}' with max_results: {max_results}")
     
     # Use arxiv to find the papers 
     client = arxiv.Client()
@@ -64,6 +77,7 @@ def search_papers(topic: str, max_results: int = 5) -> List[str]:
     with open(file_path, "w") as json_file:
         json.dump(papers_info, json_file, indent=2)
     
+    logger.info(f"Search completed. Found {len(paper_ids)} papers for topic '{topic}'. Results saved to: {file_path}")
     print(f"Results are saved in: {file_path}")
     
     return paper_ids
@@ -79,6 +93,8 @@ def extract_info(paper_id: str) -> str:
     Returns:
         JSON string with paper information if found, error message if not found
     """
+    
+    logger.info(f"Extracting information for paper ID: {paper_id}")
  
     for item in os.listdir(PAPER_DIR):
         item_path = os.path.join(PAPER_DIR, item)
@@ -89,11 +105,14 @@ def extract_info(paper_id: str) -> str:
                     with open(file_path, "r") as json_file:
                         papers_info = json.load(json_file)
                         if paper_id in papers_info:
+                            logger.info(f"Found paper {paper_id} in topic directory: {item}")
                             return json.dumps(papers_info[paper_id], indent=2)
                 except (FileNotFoundError, json.JSONDecodeError) as e:
+                    logger.warning(f"Error reading {file_path}: {str(e)}")
                     print(f"Error reading {file_path}: {str(e)}")
                     continue
     
+    logger.warning(f"Paper {paper_id} not found in any topic directory")
     return f"There's no saved information related to paper {paper_id}."
 
 
@@ -189,5 +208,19 @@ Follow these instructions:
 Please present both detailed information about each paper and a high-level synthesis of the research landscape in {topic}."""
 
 if __name__ == "__main__":
-    # Initialize and run the server
-    mcp.run(transport='stdio')
+    logger.info("Starting MCP research server...")
+    logger.info("Server will communicate via stdio protocol")
+    logger.info("Available tools: search_papers, extract_info")
+    logger.info("Available resources: papers://folders")
+    
+    try:
+        # Initialize and run the server
+        logger.info("Server is now running and waiting for MCP protocol messages...")
+        mcp.run(transport='stdio')
+    except KeyboardInterrupt:
+        logger.info("Server shutdown requested by user (Ctrl+C)")
+    except Exception as e:
+        logger.error(f"Server error: {str(e)}")
+        raise
+    finally:
+        logger.info("MCP research server shutting down")
