@@ -17,7 +17,7 @@ logger = logging.getLogger("research_server")
 PAPER_DIR = "papers"
 
 # Initialize FastMCP server
-mcp = FastMCP("research")
+mcp = FastMCP("research", host="0.0.0.0", port=10000)
 logger.info("FastMCP research server initialized")
 
 @mcp.tool()
